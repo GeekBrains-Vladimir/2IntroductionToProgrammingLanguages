@@ -8,8 +8,8 @@ void InputArray(int[] array)
     for (int i = 0; i < array.Length; i++)
         array[i] = new Random().Next(100, 1000);
 }
-
-void Even(int[] array)
+// вариант через void и int
+int Even(int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
@@ -17,7 +17,8 @@ void Even(int[] array)
         if (array[i] % 2 == 0)
             count++;
     }
-    Console.WriteLine($"Количество чётных чисел: {count}");
+    return count;
+    //Console.WriteLine($"Количество чётных чисел: {count}");
 }
 
 void NotEven(int[] array)
@@ -37,5 +38,5 @@ int n = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[n];
 InputArray(array);
 Console.WriteLine($"Массив: [{String.Join(" ,", array)}]");
-Even(array);
+Console.WriteLine($"Количество чётных чисел: {Even(array)}");
 NotEven(array);

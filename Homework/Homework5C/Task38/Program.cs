@@ -4,9 +4,9 @@
 void InputArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
-        array[i] = new Random().Next(-10, 10);
+        array[i] = new Random().Next(-10, 10); // Если Double, то array[i] = Math.Round(new Random().Next() *10,3;
 }
-
+// Мин и Макс можно было задать в 1 функции
 int Max(int[] array)
 {
     int Max = array[0];
