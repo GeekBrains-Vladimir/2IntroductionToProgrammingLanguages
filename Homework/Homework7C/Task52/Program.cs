@@ -36,7 +36,7 @@ void AverageValueColums(int[,] matrix)
             Sum += (matrix[i, j]);
             AverageValue = Sum / matrix.GetLength(0);
         }
-        Console.WriteLine($"Среднее значение по столбца {j + 1}: {Math.Round(AverageValue, 3)}");
+        Console.WriteLine($"Среднее значение по столбцу {j + 1}: {Math.Round(AverageValue, 3)}");
     }
 }
 Console.Clear();

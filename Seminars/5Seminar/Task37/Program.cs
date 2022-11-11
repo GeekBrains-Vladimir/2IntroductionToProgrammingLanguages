@@ -8,7 +8,7 @@ void InputArray(int[] array)
 }
 void ReleaseArray(int[] array)
 {
-    int count = 0;
+    //int count = 0;
     for (int i = 0; i < array.Length / 2 + array.Length % 2; i++)
     {
         Console.Write($"{array[i] * array[array.Length - i - 1]} ");
